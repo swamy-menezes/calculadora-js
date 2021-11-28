@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body class="" onkeypress="manipularTeclado()" style="background-color: #0051a2;">
+  <div class="container">
+    <div class="row">
+      <div class="col-2 mx-auto my-5">
+        <table class="table justify-content-center bg-light">
+          <tr>
+            <td colspan="6" class="text-center fs-1 text-secondary">
+              Calculadora-JS
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6"><input type="text" id="display" class="text-end fs-4" value="0" disabled></td>
+          </tr>
+          <tr class="justify-content-center">
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5 ms-3" value="7" onclick="atualizarDisplay(this)"></td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value="8" onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value="9"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value=" * "
+                onclick="atualizarOperacao(this)">
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5 ms-3" value="4"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value="5"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value="6"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value=" - "
+                onclick="atualizarOperacao(this)">
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5 ms-3" value="1"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value="2"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value="3"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value=" + "
+                onclick="atualizarOperacao(this)">
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5 ms-3" value="C" onclick="limparDisplay()">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value="0"
+                onclick="atualizarDisplay(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value=" = "
+                onclick="calcularOperacao(this)">
+            </td>
+            <td><input type="button" class="btn btn-secondary btn-lg fs-5" value=" / "
+                onclick="atualizarOperacao(this)">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
